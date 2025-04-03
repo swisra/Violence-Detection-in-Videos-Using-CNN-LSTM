@@ -54,4 +54,4 @@ Deploying on **Raspberry Pi** for edge surveillance applications
 
 ---
 
-🎯 This project aims to improve **public safety** by enabling real-time AI-powered violence detection in videos. 🚀🔥  
+ This project aims to improve **public safety** by enabling real-time AI-powered violence detection in videos.  
