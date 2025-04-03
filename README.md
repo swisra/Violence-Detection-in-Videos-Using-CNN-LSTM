@@ -1,33 +1,58 @@
 # Violence-Detection-in-Videos-Using-CNN-LSTM
+## Project Overview  
 This project aims to develop an AI-based system for detecting violent activities in videos using a combination of Convolutional Neural Networks (CNNs) and Long Short-Term Memory (LSTM) networks. The system is designed to analyze video frames, extract spatial and temporal features, and classify whether a scene contains violent actions.
 
-Approach:
-Feature Extraction with CNN (MobileNet):
+---
 
-A pre-trained MobileNet model is used for efficient feature extraction from video frames.
+##  Technologies Used  
+**MobileNet (CNN)** – for spatial feature extraction  
+**LSTM** – for temporal sequence learning  
+**TensorFlow & Keras** – deep learning framework  
+**OpenCV** – for video processing  
+**Google Colab** – for model training  
+**VS Code** – for implementation & testing  
 
-MobileNet is chosen due to its lightweight architecture, making it suitable for real-time applications and embedded systems.
+---
 
-Temporal Analysis with LSTM:
+## 🛠️ How It Works  
+**1-Feature Extraction** 📸: MobileNet extracts key features from each video frame.  
+**2-Temporal Analysis** ⏳: LSTM captures motion patterns over sequential frames.  
+**3-Prediction** 🎯: The model classifies each scene as **violent or non-violent**.  
 
-Extracted features from sequential frames are fed into an LSTM network to capture motion patterns and detect violent activities.
+---
 
-LSTM is used to process the temporal dependencies between frames, enhancing the system’s accuracy in distinguishing violence from normal actions.
+##  Dataset & Training  
+The dataset is a combination of:  
+- **Multiple online video sources**  
+- **Self-recorded videos** (Sony A7 camera) with various angles & lighting conditions  
 
-Dataset and Training:
+🛠 **Training Process:**  
+- Performed on **Google Colab** with **transfer learning**.  
+- Optimized using **Adam optimizer** and evaluated with **Accuracy, Precision, Recall, and F1-score**.  
 
-The model is trained using a dataset comprising multiple online sources and self-recorded videos.
+---
 
-Training is performed on Google Colab using transfer learning for the CNN and fine-tuning the LSTM.
+##  Model Evaluation  
+**Metrics Used:**  
+**Accuracy** – measures overall performance  
+**Precision & Recall** – evaluates false positives & false negatives  
+**F1-score** – balances precision & recall  
 
-Implementation & Evaluation:
+**Testing Scenarios:**  
+**Real-time video processing**  
+**Frame-by-frame analysis**  
 
-The trained model is tested for real-time and per-frame violence detection in videos using VS Code.
+---
 
-Various evaluation metrics such as accuracy, precision, recall, and F1-score are used to assess model performance.
+##  Challenges & Future Work  
+   **Challenges Faced:**  
+- **Dataset preprocessing & augmentation**  
+- **TensorFlow Lite compatibility for embedded deployment**  
+- **Performance optimization for real-time detection**  
 
-Challenges & Deployment:
+**Future Enhancements:**  
+Deploying on **Raspberry Pi** for edge surveillance applications  
 
-Initial challenges included dataset preprocessing, TensorFlow Lite compatibility for embedded deployment, and real-time performance optimization.
+---
 
-Future work includes deploying the model on Raspberry Pi or edge devices for surveillance applications.
+🎯 This project aims to improve **public safety** by enabling real-time AI-powered violence detection in videos. 🚀🔥  
